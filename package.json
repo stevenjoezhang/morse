@@ -1,0 +1,18 @@
+{
+  "name": "x-plane-panel",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mimi <stevenjoezhang@gmail.com> (https://zhangshuqiao.org)",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "magvar": "^1.0.3",
+    "python-struct": "^1.1.3",
+    "ws": "^7.4.0"
+  }
+}

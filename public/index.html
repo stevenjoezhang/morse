@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>X-Plane Panel</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/flightindicators.css">
+<style>
+body {
+	background-color: #333;
+}
+#container div {
+	float: left;
+}
+</style>
+</head>
+<body>
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/jquery.flightindicators.js"></script>
+<div id="container">
+	<div id="airspeed"></div>
+	<div id="attitude"></div>
+	<div id="altimeter"></div>
+	<div id="turn_coordinator"></div>
+	<div id="heading"></div>
+	<div id="variometer"></div>
+</div>
+<script src="/js/websocket.js"></script>
+<script src="/js/indicators.js"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 // Turns Morse key into USB keyboard
 
-#include <Bounce.h> // include de-bounce library
+#include <Bounce2.h> // include de-bounce library
 
 const int led = 13; // led is connected to pin 13
 const int keyPin = 7;  // morse key is connected to pin 7
-Bounce morseKey = Bounce(keyPin, 10);  // 10 ms debounce
+Bounce morseKey = Bounce();
 
 const unsigned long dashThresh = 150; // time threshold in ms to differentiate dots from dashes
 const unsigned long letterThresh = 500; // time threshold in ms to differentiate letter gaps
@@ -24,6 +24,8 @@ void setup()
 {
   pinMode(led, OUTPUT); // configure the pin connected to the led as an output
   pinMode(keyPin, INPUT_PULLUP); // configure the pin connected to the morse key as a pullup
+  morseKey.attach(keyPin);
+  morseKey.interval(10); // 10 ms debounce
 } // end of setup
 
 void loop()
